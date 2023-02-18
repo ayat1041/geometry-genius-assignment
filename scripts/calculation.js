@@ -22,13 +22,18 @@ function quickResult(field1id,field2id,btnid,typee){
     document.getElementById(btnid).addEventListener('click',function(){
         let w = stringToFloat(field1id);
         let l = stringToFloat(field2id);
+        if(w <=0 || l <=0){
+            alert("Please enter both values - Number & Positive");
+            return;
+        }
         if(typee == 'Triangle' || typee == 'Rhombus'){
             let area = (0.5*w*l).toFixed(2);
             if(isNaN(area) != true){
                 addResult(typee,area);
             }
             else{
-                alert("Please enter valid number in both fields.")
+                alert("Please enter both values - Number & Positive");
+                return;
             }
         }
         else if (typee == 'Rectangle' || typee == 'Parallelogram' || typee == "Pentagon"){
@@ -41,7 +46,7 @@ function quickResult(field1id,field2id,btnid,typee){
             }
         }
         else if (typee == 'Ellipse'){
-            let area = (3.1416*w*l).toFixed(2);
+            let area = (3.14159*w*l).toFixed(2);
             if(isNaN(area) != true){
                 addResult(typee,area);
             }
