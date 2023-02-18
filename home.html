@@ -8,14 +8,98 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="container mx-auto mt-12">
-    <div class="w-11/12 flex lg:flex-row bg-cyan-100 mx-auto justify-between items-center py-5 px-10 rounded-lg">
+    <header class="container mx-auto mt-12 mb-12">
+    <div class="flex flex-col lg:flex-row bg-cyan-100 mx-auto justify-between items-center py-5 px-10 rounded-lg">
         <div class="flex flex-col">
-            <h1 class="text-3xl font-semibold text-slate-700">Interactive</h1>
+            <h1 class="text-3xl font-semibold text-slate-700 text-center lg:text-left">Interactive</h1>
             <h1 class="text-xl font-semibold text-slate-500">Geometry Genius</h1>
         </div>
-        <button class="w-max h-max px-5 py-1 bg-blue-700 rounded text-white hover:bg-blue-900">blog</button>
+        <button class="mt-2 lg:mt-0 w-max h-max px-10 py-2 font-semibold bg-blue-700 rounded text-white hover:bg-blue-900">blog</button>
     </div>
+    </header>
+
+
+    <!-- parent grid for result and options -->
+    <section class="container mx-auto flex flex-col lg:flex-row">
+        <div class="grid lg:w-3/4 lg:grid-cols-3 grid-cols-1">
+            <div class="rounded-lg border border-[#1111111a] my-1 mx-1 py-12 px-8 flex flex-col items-center">
+                <div class="h-[194px]"><img src="/geometry-genius-resources/images/triangle.png" alt=""></div>
+                <h1 class="text-2xl font-semibold mt-12 text-slate-700">Triangle</h1>
+                <h1 class="text-sm mt-2">Area (A) = 0.5 <span class="inline-block rotate-45">+</span> b <span class="inline-block rotate-45">+</span> h</h1>
+                <div class="flex flex-row mt-5 items-center mb-12">
+                    <input class="w-20 pl-3 py-2 rounded bg-[#F1F1F1]" type="text" placeholder="b">
+                    <h1 class="ml-2 mr-3">cm</h1>
+                    <input class="w-20 pl-3 py-2 rounded bg-[#F1F1F1]" type="text" placeholder="h">
+                    <h1 class="ml-2">cm</h1>
+                </div>
+                <button class="bg-blue-700 text-white font-bold w-full py-4 rounded-lg">Calculate</button>
+            </div>
+            <div class="rounded-lg border border-[#1111111a] my-1 mx-1 py-12 px-8 flex flex-col items-center">
+                <div class="h-[194px]"><img class="w-[307px] h-[194px]" src="/geometry-genius-resources/images/rectangle.png" alt=""></div>
+                <h1 class="text-2xl font-semibold mt-12 text-slate-700">Rectangle</h1>
+                <h1 class="text-sm mt-2">Area (A) = 0.5 <span class="inline-block rotate-45">+</span> b <span class="inline-block rotate-45">+</span> h</h1>
+                <div class="flex flex-row mt-5 items-center mb-12">
+                    <input class="w-20 pl-3 py-2 rounded bg-[#F1F1F1]" type="text" placeholder="b">
+                    <h1 class="ml-2 mr-3">cm</h1>
+                    <input class="w-20 pl-3 py-2 rounded bg-[#F1F1F1]" type="text" placeholder="h">
+                    <h1 class="ml-2">cm</h1>
+                </div>
+                <button class="bg-blue-700 text-white font-bold w-full py-4 rounded-lg">Calculate</button>
+            </div>
+            <div class="rounded-lg border border-[#1111111a] my-1 mx-1 py-12 px-8 flex flex-col items-center">
+                <div class="h-[194px]"><img class="h-[194px]" src="/geometry-genius-resources/images/parallelogram.png" alt=""></div>
+                <h1 class="text-2xl font-semibold mt-12 text-slate-700">Parallelogram</h1>
+                <h1 class="text-sm mt-2">Area (A) = 0.5 <span class="inline-block rotate-45">+</span> b <span class="inline-block rotate-45">+</span> h</h1>
+                <div class="flex flex-row mt-5 items-center mb-12">
+                    <input class="w-20 pl-3 py-2 rounded bg-[#F1F1F1]" type="text" placeholder="b">
+                    <h1 class="ml-2 mr-3">cm</h1>
+                    <input class="w-20 pl-3 py-2 rounded bg-[#F1F1F1]" type="text" placeholder="h">
+                    <h1 class="ml-2">cm</h1>
+                </div>
+                <button class="bg-blue-700 text-white font-bold w-full py-4 rounded-lg">Calculate</button>
+            </div>
+            <div class="rounded-lg border border-[#1111111a] my-1 mx-1 py-12 px-8 flex flex-col items-center">
+                <div class="h-[194px]"><img class="h-[194px]" src="/geometry-genius-resources/images/rhombus.png" alt=""></div>
+                <h1 class="text-2xl font-semibold mt-12 text-slate-700">Rhombus</h1>
+                <h1 class="text-sm mt-2">Area (A) = 0.5 <span class="inline-block rotate-45">+</span> b <span class="inline-block rotate-45">+</span> h</h1>
+                <div class="flex flex-row mt-5 items-center mb-12">
+                    <input class="w-20 pl-3 py-2 rounded bg-[#F1F1F1]" type="text" placeholder="b">
+                    <h1 class="ml-2 mr-3">cm</h1>
+                    <input class="w-20 pl-3 py-2 rounded bg-[#F1F1F1]" type="text" placeholder="h">
+                    <h1 class="ml-2">cm</h1>
+                </div>
+                <button class="bg-blue-700 text-white font-bold w-full py-4 rounded-lg">Calculate</button>
+            </div>
+            <div class="rounded-lg border border-[#1111111a] my-1 mx-1 py-12 px-8 flex flex-col items-center">
+                <div class="h-[194px]"><img src="/geometry-genius-resources/images/pentagon.png" alt=""></div>
+                <h1 class="text-2xl font-semibold mt-12 text-slate-700">Pentagon</h1>
+                <h1 class="text-sm mt-2">Area (A) = 0.5 <span class="inline-block rotate-45">+</span> b <span class="inline-block rotate-45">+</span> h</h1>
+                <div class="flex flex-row mt-5 items-center mb-12">
+                    <input class="w-20 pl-3 py-2 rounded bg-[#F1F1F1]" type="text" placeholder="b">
+                    <h1 class="ml-2 mr-3">cm</h1>
+                    <input class="w-20 pl-3 py-2 rounded bg-[#F1F1F1]" type="text" placeholder="h">
+                    <h1 class="ml-2">cm</h1>
+                </div>
+                <button class="bg-blue-700 text-white font-bold w-full py-4 rounded-lg">Calculate</button>
+            </div>
+            <div class="rounded-lg border border-[#1111111a] my-1 mx-1 py-12 px-8 flex flex-col items-center">
+                <div class="h-[194px]"><img src="/geometry-genius-resources/images/ellipse.png" alt=""></div>
+                <h1 class="text-2xl font-semibold mt-12 text-slate-700">Ellipse</h1>
+                <h1 class="text-sm mt-2">Area (A) = 0.5 <span class="inline-block rotate-45">+</span> b <span class="inline-block rotate-45">+</span> h</h1>
+                <div class="flex flex-row mt-5 items-center mb-12">
+                    <input class="w-20 pl-3 py-2 rounded bg-[#F1F1F1]" type="text" placeholder="b">
+                    <h1 class="ml-2 mr-3">cm</h1>
+                    <input class="w-20 pl-3 py-2 rounded bg-[#F1F1F1]" type="text" placeholder="h">
+                    <h1 class="ml-2">cm</h1>
+                </div>
+                <button class="bg-blue-700 text-white font-bold w-full py-4 rounded-lg">Calculate</button>
+            </div>
+
+        </div>
+        <!-- results -->
+        <div class="lg:w-1/4 bg-red-600">
+            <h1 class="text-sm text-center font-semibold"><u>Area Calculation</u></h1>
+        </div>
     </section>
     <script src="/scripts/script.js"></script>
 </body>
