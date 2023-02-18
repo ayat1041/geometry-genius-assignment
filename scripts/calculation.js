@@ -70,3 +70,29 @@ quickResult('penta-p','penta-b','penta-btn','Pentagon');
 quickResult('rhombus-d1','rhombus-d2','rhombus-btn','Rhombus');
 // ellipse
 quickResult('ellipse-a','ellipse-b','ellipse-btn','Ellipse');
+
+
+
+// random value generator from 0 to 255
+function randomNumber(){
+    return Math.floor(Math.random() * 256);
+}
+function randomBoxColor(id){
+    document.getElementById(id).addEventListener("mouseenter", function() {
+        let r = randomNumber();
+        let g = randomNumber();
+        let b = randomNumber();
+        document.getElementById(id).style.backgroundColor = `rgb(${r},${g},${b})`;
+    });
+    document.getElementById(id).addEventListener("mouseleave", function() {
+        document.getElementById(id).style.backgroundColor = "";
+    });
+}
+// random color on hover
+randomBoxColor("box1");
+randomBoxColor("box2");
+randomBoxColor("box3");
+randomBoxColor("box4");
+randomBoxColor("box5");
+randomBoxColor("box6");
+
